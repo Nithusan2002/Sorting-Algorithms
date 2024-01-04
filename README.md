@@ -3,11 +3,18 @@ Sorting is about arranging elements from a data structur so that a comes befor b
 There are three problemes we can solve with sorting.
 <ol>
   <li>Collect things that belong together</li>
-  If you have things that fall into different categories, we can arrange the categories and if we sort by categories, we collect everything that falls into the same category
+  <ul>
+    <li>If you have things that fall into different categories, we can arrange the categories</li>
+    <li>If we sort by categories, we collect everything that falls into the same category</li>
+  </ul>
   <li>Match</li>
-  Given two or more sequential structures, we can find matching elements by traversing over the array only once
+  <ul>
+    <li>Given two or more sequential structures, we can find matching elements by traversing over the array only once</li>
+  </ul>
   <li>Search</li>
-  Searching in a sorted array is much faster than searching in an unsorted array
+  <ul>
+    <li>Searching in a sorted array is much faster than searching in an unsorted array</li>
+  </ul>
 </ol>
 
 # Different Sorting Algorithms:
