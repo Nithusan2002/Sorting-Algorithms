@@ -34,7 +34,46 @@ In simpler terms, the algorithm gradually builds up a sorted section of the list
 |Yes|No|
 
 ## Insertion Sort
+Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort. However, insertion sort has several advantages:
 
-## Bubble sort
+1. Simple implementation
+2. Efficient for small data sets
+3. Adaptive, i.e., efficient for data sets that are already substantially sorted
+4. More efficient in practice than most other simple quadratic (i.e., O(n^2)) algorithms such as selection sort or bubble sort
+5. Stable; does not change the relative order of elements with equal keys
 
-## Merge sort
+The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right and an unsorted sublist. At each iteration, the algorithm removes one element from the unsorted sublist, finds the location it belongs within the sorted sublist, and inserts it there. It repeats until no input elements remain.
+
+| Worst Case | Average Case |
+|------------|--------------|
+| O(n<sup>2</sup>) | O(n<sup>2</sup>) |
+
+| In-place? | Stable? |
+|-----------|---------|
+| Yes       | Yes     |
+
+## Bubble Sort
+Bubble sort is a straightforward comparison-based sorting algorithm. It is based on repeatedly stepping through the list, comparing each pair of adjacent items, and swapping them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted. 
+
+Although the algorithm is simple to understand and implement, it is inefficient for large datasets—more advanced algorithms like quicksort or merge sort are much faster on large datasets.
+
+| Worst Case | Average Case |
+|------------|--------------|
+| O(n<sup>2</sup>) | O(n<sup>2</sup>) |
+
+| In-place? | Stable? |
+|-----------|---------|
+| Yes       | Yes     |
+
+## Merge Sort
+Merge sort is an efficient, stable, comparison-based, divide-and-conquer sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output. Merge sort is a good choice for sorting linked lists as well as arrays and provides guaranteed O(n log n) performance.
+
+The algorithm works by dividing the unsorted list into 'n' sublists, each containing one element (a list of one element is considered sorted), and then repeatedly merging sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.
+
+| Worst Case | Average Case |
+|------------|--------------|
+| O(n log n) | O(n log n)   |
+
+| In-place? | Stable? |
+|-----------|---------|
+| No        | Yes     |
